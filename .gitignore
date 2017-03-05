@@ -1,1 +1,5 @@
-/nbproject/private/
+.idea
+.env
+vendor/
+composer.phar
+.user.ini

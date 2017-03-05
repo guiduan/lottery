@@ -1,8 +1,13 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//  PUBLIC_PATH
+define('PUBLIC_PATH', __DIR__);
 
+// Bootstrap
+require PUBLIC_PATH . '/../bootstrap/app.php';
+
+// Build Slim App
+$app = require BASE_PATH . '/app/routes.php';
+
+// Run ButterFly!
+$app->run();
